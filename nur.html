@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MebleHaus</title>
+<link rel="stylesheet" href="nur.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-left">
+        <h1>MebleHaus</h1>
+      </div>
+      <div class="nav-right">
+        <ul id="nav-menu">
+          <li><a href="#">начало</a></li>
+          <li><a href="#">варианты</a></li>
+          <li><a href="#"><button class="btn-outline">Подробнее</button></a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="carousel">
+      <button class="carousel-button prev">&#8249;</button>
+      <div class="carousel-track" id="track">
+        <div class="slide">Первый слайд</div>
+        <div class="slide">Второй слайд</div>
+        <div class="slide">Третий слайд</div>
+      </div>
+      <button class="carousel-button next">&#8250;</button>
+    </div>
+
+  </header>
+
+  <section>
+    <h1 class="h1">Лучшие варианты <span class="cart-icon" onclick="toggleCart()">🛒 <span
+          id="cart-count">0</span></span></h1>
+
+    <aside id="cart-box" class="cart-box">
+      <h2>🛒 Корзина</h2>
+      <ul id="cart"></ul>
+      <p><strong>Итого:</strong> <span id="total">0</span> $</p>
+      <button onclick="checkout()">✅ Оформить</button>
+      <button onclick="clearCart()">🧹 Очистить</button>
+    </aside>
+
+    <div class="card-box">
+      <div class="card">
+        <div class="card-img">
+          <img src="" alt="Кресло">
+        </div>
+        <div class="card-content">
+          <button onclick="addToCart('Кресло', 200)">Добавить</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://via.placeholder.com/300x180.png?text=Диван" alt="Диван">
+        </div>
+        <div class="card-content">
+          <button onclick="addToCart('Диван', 500)">Добавить</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="https://via.placeholder.com/300x180.png?text=Стол" alt="Стол">
+        </div>
+        <div class="card-content">
+          <button onclick="addToCart('Стол', 150)">Добавить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="made_in_china">
+
+
+    <h1></h1>
+    <div class="ma">
+      <div class="ma-card">
+        <div class="ma-icons">
+          <img src="./1380641-removebg-preview.png" alt="">
+        </div>
+        <div class="ma-name">
+          много вариантов
+        </div>
+      </div>
+    </div>
+    <div class="ma">
+      <div class="ma-card">
+        <div class="ma-icons">
+          <img src="./605964-removebg-preview.png" alt="">
+        </div>
+        <div class="ma-name">
+          быстрая дастаыка
+        </div>
+      </div>
+    </div>
+    <div class="ma">
+      <div class="ma-card">
+        <div class="ma-icons">
+          <img src="./842482-removebg-preview.png" alt="">
+        </div>
+        <div class="ma-name">
+          made in china
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="./nur.js"></script>
+</body>
+
+</html>
